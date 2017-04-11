@@ -1,4 +1,4 @@
-﻿Installing Dependencies
+Installing Dependencies
 virtualenv socialcops1
 source socialcops1/bin/activate
 pip install watchdog
@@ -6,7 +6,7 @@ npm init
 npm install difflib
 
 
-Fil structure
+File structure
 1. SocialCops contains 2 subfolders i.DeviceA ii.DeviceB, these 2 folders act as the 2 seperate droids (machines) which are synced up
 2. SocialCops also contains a folder python hwich contains all the python files
 3. node_modules contains the libra
