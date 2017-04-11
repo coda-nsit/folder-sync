@@ -1,0 +1,17 @@
+{
+  "name": "socialcops",
+  "version": "1.0.0",
+  "description": "virtualenv socialcops1 source socialcops1/bin/activate pip install watchdog",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rishab",
+  "license": "ISC",
+  "dependencies": {
+    "difflib": "^0.2.4"
+  }
+}
