@@ -1,18 +1,17 @@
 Installing Dependencies
-virtualenv socialcops1
-source socialcops1/bin/activate
-pip install watchdog
-npm init
-npm install difflib
+1. virtualenv socialcops1
+2. source socialcops1/bin/activate
+3. pip install watchdog
+4. npm init
+5. npm install difflib
 
 
-File structure
-1. SocialCops contains 2 subfolders i.DeviceA ii.DeviceB, these 2 folders act as the 2 seperate droids (machines) which are synced up
-2. SocialCops also contains a folder python hwich contains all the python files
-3. node_modules contains the libra
-4. ry difflib which ws installed using npm
-5. links.odt contains all the links that were used while building this project
-6. package.json is built by npm to keep track of all the npm packages
+Fil structure
+1. SocialCops contains 2 subfolders i.DeviceA ii.DeviceB, these 2 sub folders act as the 2 seperate droids (machines) which are synced up
+2. SocialCops also contains a folder python which contains all the python files
+3. node_modules contains the library difflib which ws installed using npm
+4. links.odt contains all the links that were used while building this project
+5. package.json is built by npm to keep track of all the npm packages
 
 Architecture used
 Each of DeviceA and DeviceB contain the files that need to be synced up. Each of these folders also contain .duplicate folders. These are used to keep track of the other device’s files, example: DeviceA -> .duplicates will always be in sync with the files of DeviceB and vice versa. This is done so that the device owner is always at the liberty to decide whether he/she wants to pull the changes made by the other device into his/her own device. After a new operation is done like creating a file, renaming a file and deleting a file, it will always be asked if user actually wants to do these changes in own device. This is done by comparing the files in .duplicates and the actual files and thus the .duplicates
